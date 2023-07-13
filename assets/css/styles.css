@@ -132,28 +132,39 @@
     }
 
     .menu-container{
-   
-        font-size: 2rem;
+        height: 80vh;
     }
 
     .menu-icon{
-        padding: 20px;
+        padding: 2vw;
     } 
 
     .ul-menu{
         list-style: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        gap: 2.5em;
         height: 70vh;
     }
 
     .ul-menu a{
         color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
         text-decoration: none;
         font-size: 1.5rem;
         letter-spacing: 2px;
+    }
+
+    .ul-menu li{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .ul-menu li:hover{
+        background-color: #5F1B09;
     }
 }
 
