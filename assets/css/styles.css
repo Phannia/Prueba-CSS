@@ -1,42 +1,69 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav-container{
     grid-area: nav-container;
-    height: 12vh;
+    height: 13vh;
     background-color: #677136;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "logo-container nav-icon";
+    justify-content: space-between;
 }
 
 .logo-container{
     grid-area: logo-container;
-    height: 12vh;
-    width: 20vw;
+    font-size: 30px;
 }
+
+.nav-icon{
+    grid-area: nav-icon;
+    font-size: 30px;
+    width: 15vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* .logo-container button{
+    grid-area: logo-button;
+    display: block;
+    padding: 7px;
+    background-color: #BC5408;
+    color: #FFA102;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+} */
 .dpg-logo{
-    width: 50px;
-    margin: 10px;
+    width: 90px;
     padding: 10px;
+    margin: 5px;
 }
 
 .menu-container{
     grid-area: menu-container;
-    width: 84vw;
+    width: 65vw;
+    display: none;
 }
 
 .menu-icon{
     width: 10vw;
-    padding: 2px;
+    color: white;
+    padding-right: 5px;
 }
 
-.ul-menu{
-    list-style: none;
-}
 
-.nav-container{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-    "logo-container menu-container";
-}
+
