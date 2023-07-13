@@ -25,6 +25,11 @@
     width: 84vw;
 }
 
+.menu-icon{
+    width: 10vw;
+    padding: 2px;
+}
+
 .ul-menu{
     list-style: none;
 }
