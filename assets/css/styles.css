@@ -2,117 +2,172 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav-container{
-    grid-area: nav-container;
-    height: 13vh;
-    background-color: #677136;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    grid-template-areas: 
-    "logo-container nav-icon";
-    justify-content: space-between;
-    align-items: center;
-    --state-bars: scale(1);
-    --state-close: scale(0);
-    --state-menu: translate(200%);
-}
-
-.nav-container:target {
-    --state-menu: translate(0);
-    --state-bars: scale(0);
-    --state-close: scale(1);
-}
-
-.logo-container{
-    grid-area: logo-container;
-}
-
-.logo-container a{
-    display: flex;
-    align-items: center;
-}
-
-.dpg-logo{
-    width: 90px;
-    padding: 10px;
-    margin: 5px;
-}
-
-.nav-icon{
-    grid-area: nav-icon;
-    font-size: 30px;
-    width: 15vw;
-    height: 13vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-icon a{
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.bars{
-    transform: var(--state-bars);
-    cursor: pointer;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-    transition: 400ms transform;
-}
-
-.close {
-    transform: var(--state-close);
-    cursor: pointer;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-    transition: 400ms transform;
-}
-
-.menu-container{
-    background-color: #677136;
-    color: white;
-    padding: 20px;
-    position: absolute;
-    top: 13vh;
-    bottom: 50vh;
-    left: 50%;
-    right: 0;
-    transform: var(--state-menu);
-    transition: 300ms transform;
-}
-
-.menu-icon{
-    color: white;
-    padding: 5px;
-}
-
-.ul-menu{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2.5em;
-}
-.ul-menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
-
-@media screen (min-width: 576px){
+@media (max-width: 575px){
+    .nav-container{
+        grid-area: nav-container;
+        height: 13vh;
+        background-color: #677136;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-areas: 
+        "logo-container nav-icon";
+        justify-content: space-between;
+        align-items: center;
+        --state-bars: scale(1);
+        --state-close: scale(0);
+        --state-menu: translate(200%);
+    }
     
+    .nav-container:target {
+        --state-menu: translate(0);
+        --state-bars: scale(0);
+        --state-close: scale(1);
+    }
+    
+    .logo-container{
+        grid-area: logo-container;
+    }
+    
+    .logo-container a{
+        display: flex;
+        align-items: center;
+    }
+    
+    .dpg-logo{
+        width: 90px;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .nav-icon{
+        grid-area: nav-icon;
+        font-size: 30px;
+        width: 15vw;
+        height: 13vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-icon a{
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    .bars{
+        transform: var(--state-bars);
+        cursor: pointer;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+        transition: 400ms transform;
+    }
+    
+    .close {
+        transform: var(--state-close);
+        cursor: pointer;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+        transition: 400ms transform;
+    }
+    
+    .menu-container{
+        background-color: #677136;
+        color: white;
+        padding: 20px;
+        position: absolute;
+        top: 13vh;
+        bottom: 50vh;
+        left: 50%;
+        right: 0;
+        transform: var(--state-menu);
+        transition: 300ms transform;
+    }
+    
+    .menu-icon{
+        color: white;
+        padding: 5px;
+    }
+    
+    .ul-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2.5em;
+    }
+    .ul-menu a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* MEDIA QUERIES MIN:WIDTH: 576PX */
+@media (min-width: 576px){
+    .nav-container{
+        width: 25vw;
+        background-color: #677136;
+        height: 100vh;
+        --state-bars: scale(0);
+        --state-close: scale(0);
+    }
+        .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 20vh;
+    }
+    .dpg-logo{
+        width: 90px;
+    }
+
+    .nav-icon{
+        display: none;
+    }
+
+    .menu-container{
+        height: 80vh;
+    }
+
+    .menu-icon{
+        padding: 2vw;
+    } 
+
+    .ul-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .ul-menu a{
+        color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .ul-menu li{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .ul-menu li:hover{
+        background-color: #5F1B09;
+    }
 }
 
 
 
 
-/* .menu-icon{
-    width: 10vw;
-    color: white;
-    padding-right: 5px;
-} */
