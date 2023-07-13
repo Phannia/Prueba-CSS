@@ -3,7 +3,35 @@
     padding: 0;
 }
 
-.nav-menu{
+.nav-container{
+    grid-area: nav-container;
     height: 10vh;
+    background-color: #677136;
 }
 
+.logo-container{
+    grid-area: logo-container;
+    height: 10vh;
+    width: 8vw;
+}
+.dpg-logo{
+    width: 50px;
+    margin: 7px;
+    padding: 5px;
+}
+
+.menu-container{
+    grid-area: menu-container;
+}
+
+.ul-menu{
+    list-style: none;
+    text-decoration: ;
+}
+
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "logo-container menu-container";
+}
