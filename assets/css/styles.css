@@ -5,28 +5,28 @@
 
 .nav-container{
     grid-area: nav-container;
-    height: 10vh;
+    height: 12vh;
     background-color: #677136;
 }
 
 .logo-container{
     grid-area: logo-container;
-    height: 10vh;
-    width: 8vw;
+    height: 12vh;
+    width: 20vw;
 }
 .dpg-logo{
     width: 50px;
-    margin: 7px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .menu-container{
     grid-area: menu-container;
+    width: 84vw;
 }
 
 .ul-menu{
     list-style: none;
-    text-decoration: ;
 }
 
 .nav-container{
