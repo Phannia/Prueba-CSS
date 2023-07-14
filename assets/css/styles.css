@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 575px){
@@ -19,6 +20,9 @@
         --state-bars: scale(1);
         --state-close: scale(0);
         --state-menu: translate(-200%);
+        position: fixed;
+        width: 100vw;
+        z-index: 50;
     }
     
     .nav-container:target {
@@ -116,21 +120,60 @@
         padding: 10px;
         height: 10vh;
     }
-    
 
-    /* SECCIÓN GALLERY */
+    .info-container{
+        height: 87vh;
+        overflow: scroll;
+    }
+    
+    /* SECCIÓN INICIO------------------------------------------------------------------------ */
+    .home{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        scroll-margin-top: 10ex;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        overflow: scroll;
+    }
+
+    .home h2{
+        text-align: center;
+        padding: 40px;
+        letter-spacing: 2px;
+        top: 30vh;
+        color: white;
+    }
+
+    .home p{
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .home img{
+        height: 15em;
+    }
+
+    /* SECCIÓN GALLERY----------------------------------------------------------------------- */
     .gallery-container{
-        height: calc(100vh - 13vh);
+        height: 100vh;
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 150px;
         padding: 20px;
+        scroll-margin-top: 10ex;
         grid-gap: 10px;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        overflow: scroll;
     }
 
     .gallery_card{
-        position: relative
+        position: relative;
     }
 
     .gallery_img{
@@ -240,6 +283,46 @@
         grid-template-areas: 
         "nav-container gallery-container";
     }
+
+    /* SECCIÓN DE CONTENIDO */
+    .content-box{
+        height: 100vh;
+        width: 80vw;
+        overflow: scroll;
+    }
+
+    /* SECCIÓN INICIO------------------------------------------------------------------------ */
+    
+    .home{
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        grid-area: home;
+    }
+
+    .home h2{
+        text-align: center;
+        padding: 40px;
+        letter-spacing: 2px;
+        top: 30vh;
+        color: white;
+    }
+
+    .home p{
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .home img{
+        height: 15em;
+justify-content: center;
+    }
+    
 
     /* SECCIÓN GALLERY */
     .gallery-container{
