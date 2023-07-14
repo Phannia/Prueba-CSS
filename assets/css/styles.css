@@ -276,11 +276,10 @@
         --state-bars: scale(0);
         --state-close: scale(0);
     }
-        .logo-container{
+    .logo-container{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding: 20px; */
         height: 20vh;
     }
     .dpg-logo{
@@ -488,6 +487,42 @@ justify-content: center;
     .about .atmosphere p{
         padding: 10px;
         font-size: 1.3em;
+    }
+
+    /* REQUERIMIENTOS DEL SISTEMA--------------------------------------------------------------------------------------------- */
+    .requirements{
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        padding: 20px;
+        height: 100vh
+    }
+    
+    .min-req-box{
+        display: flex;
+        justify-content: start;
+    }
+
+    .requirements h2{
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        padding: 40px;
+    }
+    .minimum,
+    .recommended{
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .minimum p{
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+
+    .recommended p{
+        padding: 5px;
+        letter-spacing: 1px;
     }
 }
 
