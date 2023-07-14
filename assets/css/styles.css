@@ -284,25 +284,23 @@
         "nav-container gallery-container";
     }
 
-    .info-container{
+    /* SECCIÓN DE CONTENIDO */
+    .content-box{
         height: 100vh;
         width: 80vw;
         overflow: scroll;
     }
 
     /* SECCIÓN INICIO------------------------------------------------------------------------ */
+    
     .home{
-        height: calc(100vh - 13vh);
-        display: flex;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 30px;
-        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
         height: 100vh;
-        display: grid;
+        display: flex;
         grid-area: home;
-        display: NONE;
     }
 
     .home h2{
@@ -322,7 +320,7 @@
 
     .home img{
         height: 15em;
-        text-align: center;
+justify-content: center;
     }
     
 
