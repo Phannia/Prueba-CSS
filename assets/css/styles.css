@@ -170,9 +170,11 @@
     }
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 /* MEDIA QUERIES MIN-WIDTH: 576PX */
 @media (min-width: 576px){
     .nav-container{
+        grid-area: nav-container;
         width: 25vw;
         background-color: #677136;
         height: 100vh;
@@ -187,7 +189,7 @@
         height: 20vh;
     }
     .dpg-logo{
-        width: 90px;
+        width: 10vw;
     }
 
     .nav-icon{
@@ -230,6 +232,34 @@
         background-color: #5F1B09;
         transition: background-color 400ms;
     }
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+        grid-template-areas: 
+        "nav-container gallery-container";
+    }
+
+    /* SECCIÓN GALLERY */
+    .gallery-container{
+        grid-area: gallery-container;   
+        height: 100vh;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 160px
+    }
+
+    .gallery_card{
+        position: relative
+    }
+
+    .gallery_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
 }
 
 
