@@ -444,11 +444,10 @@ justify-content: center;
     /* SECCIÓN ACERCA DE----------------------------------------------------------------------------------------------- */
     .about{
         background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
         display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 80vw;        
         padding: 20px;
         overflow: scroll;
     }
@@ -492,8 +491,12 @@ justify-content: center;
     /* REQUERIMIENTOS DEL SISTEMA--------------------------------------------------------------------------------------------- */
     .requirements{
         background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
-        padding: 20px;
-        height: 100vh
+        padding: 10px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
     }
     
     .min-req-box{
@@ -505,8 +508,13 @@ justify-content: center;
         color: white;
         font-weight: bolder;
         text-align: center;
-        padding: 40px;
+        padding: 10px;
     }
+
+    .requirements img{
+        height: 120px;
+    }
+    
     .minimum,
     .recommended{
         padding: 10px;
@@ -523,6 +531,23 @@ justify-content: center;
     .recommended p{
         padding: 5px;
         letter-spacing: 1px;
+    }
+
+    .download{
+        display: flex;
+    }
+
+    .download h3{
+        padding: 30px;
+        color: #5F1B09;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .arrow-icon{
+        display: flex;
+        align-items: center;
+        font-size: 3em;
+        color: #677136;
     }
 }
 
