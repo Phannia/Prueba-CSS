@@ -85,6 +85,7 @@
         right: 0;
         transform: var(--state-menu);
         transition: 300ms transform;
+        z-index: 100;
     }
     
     .menu-icon{
@@ -159,7 +160,7 @@
     }
 }
 
-/* MEDIA QUERIES MIN:WIDTH: 576PX */
+/* MEDIA QUERIES MIN-WIDTH: 576PX */
 @media (min-width: 576px){
     .nav-container{
         width: 25vw;
