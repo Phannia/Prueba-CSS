@@ -175,7 +175,7 @@
 @media (min-width: 576px){
     .nav-container{
         grid-area: nav-container;
-        width: 25vw;
+        width: 20vw;
         background-color: #677136;
         height: 100vh;
         --state-bars: scale(0);
@@ -185,11 +185,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        /* padding: 20px; */
         height: 20vh;
     }
     .dpg-logo{
-        width: 10vw;
+        width: 15vh;
     }
 
     .nav-icon{
@@ -245,21 +245,68 @@
     .gallery-container{
         grid-area: gallery-container;   
         height: 100vh;
-        width: 75vw;
+        width: 80vw;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 160px
+        grid-auto-rows: 200px;
+        overflow: scroll;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
     }
 
     .gallery_card{
-        position: relative
+        position: relative;
+        margin: 10px;
+        /* transition: all 900ms cubic-bezier(.25, .4, .45, 1.4); */
+    }
+
+    .gallery-card:hover{
+        /* flex:5; */
     }
 
     .gallery_img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    } 
+        border-radius: 15px;
+    }
+    
+    .gallery_title{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        width: 100%;
+        background: linear-gradient(rgba(255, 162, 2, 0.3), rgba(188, 83, 8, 0.6)) ;
+    }
+
+    /* Selección de área de imágenes */
+    .gallery_card:nth-child(2){
+        grid-row-start: span 2;
+    }
+
+    .gallery_card:nth-child(5){
+        grid-row-start: span 2;
+    }
+
+    .gallery_card:nth-child(6){
+        grid-column-start: span 2;
+    }
+
+    .gallery_card:nth-child(7){
+        grid-row-start: span 2;
+    }
+
+    .gallery_card:nth-child(8){
+        grid-row-start: span 2;
+    }
+
+    .gallery_card:nth-child(10){
+        grid-row-start: span 2;
+    }
+
+    .gallery_card:nth-child(11){
+        grid-column-start: span 2;
+    }
+
 }
 
 
