@@ -390,7 +390,56 @@ justify-content: center;
         grid-column-start: span 2;
     }
 
+    /* SECCIÓN ACERCA DE----------------------------------------------------------------------------------------------- */
+    .about{
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        padding: 20px;
+        overflow: scroll;
+    }
+
+    .coop,
+    .jobs,
+    .atmosphere{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        height: 100vh;
+        color: white;
+    }
+    .about .coop h3{
+        padding: 10px;
+        font-size: 1.8em;
+    }
+    .about .coop p{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .about .jobs h3{
+        padding: 10px;
+        font-size: 1.8em;
+    }
+    .about .jobs p{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .about .atmosphere h3{
+        padding: 10px;
+        font-size: 1.8em;
+    }
+    .about .atmosphere p{
+        padding: 10px;
+        font-size: 1.3em;
+    }
 }
+
+
 
 
 
