@@ -77,7 +77,8 @@
     .menu-container{
         background-color: #677136;
         color: white;
-        padding: 20px;
+        width: 50vw;
+        height: 40vh;
         position: absolute;
         top: 13vh;
         bottom: 50vh;
@@ -98,13 +99,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        gap: 2.5em;
     }
     .ul-menu a{
         color: white;
         text-decoration: none;
         font-size: 1.2rem;
         letter-spacing: 2px;
+    }
+
+    .ul-menu li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 10vh;
     }
     
 
