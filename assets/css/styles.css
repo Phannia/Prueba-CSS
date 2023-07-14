@@ -117,8 +117,37 @@
         height: 10vh;
     }
     
+    /* SECCIÓN INICIO------------------------------------------------------------------------ */
+    .home{
+        height: calc(100vh - 13vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+    }
 
-    /* SECCIÓN GALLERY */
+    .home h2{
+        text-align: center;
+        padding: 40px;
+        letter-spacing: 2px;
+        top: 30vh;
+        color: white;
+    }
+
+    .home p{
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .home img{
+        height: 15em;
+    }
+
+    /* SECCIÓN GALLERY----------------------------------------------------------------------- */
     .gallery-container{
         height: calc(100vh - 13vh);
         width: 100vw;
@@ -127,6 +156,7 @@
         grid-auto-rows: 150px;
         padding: 20px;
         grid-gap: 10px;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
     }
 
     .gallery_card{
