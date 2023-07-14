@@ -19,6 +19,9 @@
         --state-bars: scale(1);
         --state-close: scale(0);
         --state-menu: translate(-200%);
+        position: fixed;
+        width: 100vw;
+        z-index: 50;
     }
     
     .nav-container:target {
@@ -116,15 +119,21 @@
         padding: 10px;
         height: 10vh;
     }
+
+    .info-container{
+        height: 87vh;
+        overflow: scroll;
+    }
     
     /* SECCIÓN INICIO------------------------------------------------------------------------ */
     .home{
-        height: calc(100vh - 13vh);
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 30px;
+        padding-top: 13vh;
         background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
     }
 
@@ -270,6 +279,48 @@
         grid-template-areas: 
         "nav-container gallery-container";
     }
+
+    .info-container{
+        height: 100vh;
+        width: 80vw;
+        overflow: scroll;
+    }
+
+    /* SECCIÓN INICIO------------------------------------------------------------------------ */
+    .home{
+        height: calc(100vh - 13vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        height: 100vh;
+        display: grid;
+        grid-area: home;
+        display: NONE;
+    }
+
+    .home h2{
+        text-align: center;
+        padding: 40px;
+        letter-spacing: 2px;
+        top: 30vh;
+        color: white;
+    }
+
+    .home p{
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .home img{
+        height: 15em;
+        text-align: center;
+    }
+    
 
     /* SECCIÓN GALLERY */
     .gallery-container{
