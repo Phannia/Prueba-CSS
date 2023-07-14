@@ -169,6 +169,7 @@
         scroll-margin-top: 10ex;
         grid-gap: 10px;
         background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
+        overflow: scroll;
     }
 
     .gallery_card{
