@@ -335,7 +335,7 @@
         grid-area: nav-container;
         width: 20vw;
         background-color: #677136;
-        height: 100vh;
+        height: 90vh;
         --state-bars: scale(0);
         --state-close: scale(0);
     }
@@ -394,13 +394,15 @@
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr, 2fr;
+        grid-template-rows: auto, auto;
         grid-template-areas: 
-        "nav-container gallery-container";
+        "nav-container gallery-container"
+        "footer footer";
     }
 
     /* SECCIÓN DE CONTENIDO */
     .content-box{
-        height: 100vh;
+        height: 90vh;
         width: 80vw;
         overflow: scroll;
     }
@@ -434,7 +436,7 @@
 
     .home img{
         height: 15em;
-justify-content: center;
+    justify-content: center;
     }
     
 
@@ -620,6 +622,14 @@ justify-content: center;
         align-items: center;
         font-size: 3em;
         color: #677136;
+    }
+
+    /* FOOTER------------------------------------------------------------------------------------------- */
+    footer{
+        grid-area: footer;
+    }
+    .RRSS-icons{
+        color: black;
     }
 }
 
