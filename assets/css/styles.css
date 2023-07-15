@@ -578,6 +578,13 @@ justify-content: center;
 
     .requirements img{
         height: 120px;
+        transition: all 300ms;
+        cursor: pointer;
+    }
+
+    .requirements img:hover{
+        transform: scale(1.4);
+        cursor: pointer;
     }
     
     .minimum,
