@@ -173,6 +173,7 @@
 
     .gallery_card{
         position: relative;
+        transition: all 500ms;
     }
 
     .gallery_img{
@@ -452,11 +453,13 @@ justify-content: center;
     .gallery_card{
         position: relative;
         margin: 10px;
-        /* transition: all 900ms cubic-bezier(.25, .4, .45, 1.4); */
+        transition: all 300ms;
+        cursor: pointer;
     }
 
-    .gallery-card:hover{
-        /* flex:5; */
+    .gallery_card:hover{
+        transform: scale(1.4);
+        z-index: 50;
     }
 
     .gallery_img{
