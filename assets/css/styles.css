@@ -223,6 +223,7 @@
         height: 100vh;
         padding-right: 20px;
         padding-left: 20px;
+        padding-top: 30px;
         overflow: scroll;
         scroll-margin-top: 10ex;
     }
@@ -270,7 +271,7 @@
     .requirements{
             background:linear-gradient(rgba(95,27,9,0.99), rgba(255,161,2,0.8));
             padding: 20px;
-            height: 100vh;
+            height: 78vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -326,6 +327,27 @@
         .arrow-icon{
             display: none;
         }
+
+            /* FOOTER------------------------------------------------------------------------------------------- */
+    footer{
+        grid-area: footer;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        background:linear-gradient(rgba(103,113,54,0.99), rgba(255,161,2,0.8));
+    }
+    .RRSS-icons a{
+        color: #5F1B09;
+        size: 50%;
+        font-size: 2em;
+    }
+    
+    .RRSS-txt h3{
+        color: #5F1B09;
+    }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
